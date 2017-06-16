@@ -13,13 +13,15 @@
         <div class='mushrooms'><img src=img/mushrooms2.png alt="mushroom image" style="height:108px;"></div>
         <h1>Mellow Mushroom</h1>
   			<h2>Vegetarian Pizzas</h2>
-        <button onclick="toggleSection('about')">About Us</button>
+        <!-- <button onclick="toggleSection('about')">About Us</button>
         <div id="about" style="display: none">
           <h5><strong>About us</strong>: Lorem ipsum dolor sit amet, veri prima appareat per ea, quo repudiare efficiendi signiferumque id, te eum delectus efficiantur. Posse ornatus eu vel, ea solum decore dictas vim. Aliquam feugiat inermis eum no. His id feugiat accommodare. Mea iudico prompta quaeque ne, ne has quas diceret, ne est exerci labitur.</h5>
-        </div>
+        </div> -->
       </div>
+
       <div class="container">
-        <div class='veggie'><img src=img/create-pizza.jpg alt="Create your own pizza!" style="height:188px;"><p></p>
+        <div class='veggie'>
+          <img src=img/create-pizza.jpg alt="Create your own pizza!" style="height:188px;"><p></p>
           <h3>Fast, Easy and Convenient.</h3>
           <h3>Sizes:</h3>
           <h4>* Small $10</h4>
@@ -29,138 +31,81 @@
           <img src=img/basil.png alt="Tasty tomato basil pizza!" style="height:108px;">
           <h3><strong>Order Now!</strong></h3>
         </div>
-      </div>
-      <div class="container">
-        <div class='order' id="user-input">
 
-    			<form id="new-pizza">
-    				<div class="form-group">
-    					<label for="name"><h4>Name:</h4></label>
-    					<input id="name" class="personal-info" type="text">
-    				</div>
-    				<div class="form-group">
-    					<label for="address"><h4>Address:</h4></label>
-    					<input id="address" class="personal-info" type="text">
-    				</div>
+        <!-- form -->
+  			<form id="new-pizza">
+  				<div class="form-group">
+  					<label for="name"><h4>Name:</h4></label>
+  					<input id="name" class="personal-info" type="text">
+  				</div>
+  				<div class="form-group">
+  					<label for="address"><h4>Address:</h4></label>
+  					<input id="address" class="personal-info" type="text">
+  				</div>
 
-            <div class="form-group">
-      				<div class="radio">
-                <h4><strong>Size:</strong></h4>
-                <label>
-      						<input type="radio" name="size" value="small" checked>
-      						Small ($10)
-      					</label>
-      				</div>
-      				<div class="radio">
-      					<label>
-      						<input type="radio" name="size" value="medium">
-      						Medium ($12)
-      					</label>
-      				</div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="size" value="large">
-                  Large ($14)
-                </label>
-              </div>
+
+
+
+        <!-- <div class="form-group"> -->
+          <div id="size">
+            <label for="size">Size:</label>
+            <div class="radio">
+              <label class="radio-inline"><input type="radio" name="size" value="small">Small ($10)</label>
+              <label class="radio-inline"><input type="radio" name="size" value="medium">Medium ($12)</label>
+              <label class="radio-inline"><input type="radio" name="size" value="large">Large ($14)</label>
             </div>
+          </div>
+          <!-- </div> -->
 
-            <div class="form-group">
-              <div class="radio">
-                <h4><strong>Base Sauce:</strong></h4>
-                <label>
-                  <input type="radio" name="sauce" value="italian-base" checked>
-                  Crushed Italian Tomatoes Base
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="sauce" value="garlic-olive-oil-base">
-                  Garlic Olive Oil Base
-                </label>
-              </div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="sauce" value="pesto-base">
-                  Pesto Base
-                </label>
-              </div>
+          <!-- <div class="form-group"> -->
+          <div id="sauce">
+            <label for="sauce">Base Sauce:</label>
+            <div class="radio">
+              <label class="radio"><input type="radio" name="sauce" value="italian">Crushed Italian Tomatoes Base</label>
+              <label class="radio"><input type="radio" name="sauce" value="garlic">Garlic Olive Oil Base</label>
+              <label class="radio"><input type="radio" name="sauce" value="pesto">Pesto Base</label>
             </div>
+          </div>
+          <!-- </div> -->
 
-            <div class="form-group">
-              <div class="checkbox">
-                <h4><strong>Cheese:</strong></h4>
-                <label>
-      						<input type="checkbox" name="cheese" value="fresh-mozzarella" checked>
-      						Fresh Mozzarella ($1)
-      					</label>
-      				</div>
-      				<div class="checkbox">
-      					<label>
-      						<input type="checkbox" name="cheese" value="goat-cheese">
-      						Goat Cheese ($1)
-      					</label>
-      				</div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" name="cheese" value="fontina">
-                  Fontina ($1)
-                </label>
-              </div>
+          <!-- <div class="form-group"> -->
+          <div id="cheese">
+            <label for="cheese">Cheese:</label>
+            <div class="checkbox">
+              <label class="checkbox"><input type="checkbox" name="cheese" value="mozzarella">Fresh Mozzarella ($1)</label>
+              <label class="checkbox"><input type="checkbox" name="cheese" value="goat">Goat Cheese ($1)</label>
+              <label class="checkbox"><input type="checkbox" name="cheese" value="fontina">Fontina ($1)</label>
             </div>
+          </div>
+          <!-- </div> -->
 
 
-            <div class="form-group">
-              <div class="checkbox">
-                <h4><strong>Toppings:</strong></h4>
-                <label>
-                  <input type="checkbox" name="toppings" value="mushrooms">
-                  Mushrooms ($1)
-                </label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" name="toppings" value="sun-ripened-tomatoes">
-                  Sun Ripened Tomatoes ($1)
-                </label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" name="toppings" value="caramelized-onions">
-                  Caramelized Onions ($1)
-                </label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" name="toppings" value="roasted-garlic">
-                  Roasted Garlic ($1)
-                </label>
-              </div>
-              <div class="checkbox">
-                <label>
-                  <input type="checkbox" name="toppings" value="green-olives">
-                  Basil ($1)
-                </label>
-              </div>
+
+          <!-- <div class="form-group"> -->
+          <div id="topping">
+            <label for="topping">Toppings:</label>
+            <div class="checkbox">
+              <label class="checkbox"><input type="checkbox" name="topping" value="mushroom">Mushrooms ($1)</label>
+              <label class="checkbox"><input type="checkbox" name="topping" value="tomato">Sun Ripened Tomatoes ($1)</label>
+              <label class="checkbox"><input type="checkbox" name="topping" value="onion">Caramelized Onions ($1)</label>
+              <label class="checkbox"><input type="checkbox" name="topping" value="garlic">Roasted Garlic ($1)</label>
+              <label class="checkbox"><input type="checkbox" name="topping" value="basil">Basil ($1)</label>
             </div>
+          </div>
+          <!-- </div> -->
 
-            <button type="submit" class="btn btn-default" id="newPizzaSubmit">Review My Order</button>
-          </form>
-        </div>
+          <button type="submit" class="btn btn-default" id="newPizzaSubmit">Review My Order</button>         
+        </form>
       </div>
 
       <div class="output">
         <h3>Order Review:</h3>
-        <ul id="pizza-order-list">
-        </ul>
-        <div id="pizza-details"><h4>
-          <p>Size: <span id="size"></span></p>
-          <p>Cheese: <span id="cheese"></span></p>
-          <p>Base Sauce: <span id="sauce"></span></p>
-          <p>Toppings: <span id="topping"></span></p></h4>
+        <div id="purchase">
+          <p class="lead">Size: <span class="size"></span>. Sauce: <span class="sauce"></span>. Cheese(s): <span class="cheese"></span>. Topping(s): <span class="topping"></span>. Your price for this pizza is: <span class="purchase-price"></span></p>
         </div>
       </div>
 
+      <!-- thank you footer -->
       <div class="thank-you" id="center-position">
   				<img id="right" src=img/right.png alt="mushroom logo" style="height:60px;">
   				<img id="left" src=img/left.png alt="mushroom logo" style="height:60px;">
