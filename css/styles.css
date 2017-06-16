@@ -12,13 +12,18 @@ body {
   background-color: #AED6F1;
   padding-left: 0px;
   padding-right: 0px;
+  text-align: center;
 }
 .thank-you {
   text-align: center;
 }
 
-.thank-you img {
+.thank-you #right {
   float:right;
+}
+
+.thank-you #left {
+  float:left;
 }
 
 .thank-you blockquote {

@@ -15,7 +15,17 @@
     </div>
 
     <div class="container">
-    <h3>Please enter your pizza order:</h3>
+      <div class="info">
+        <p>Fast, Easy and Convenient. Order <strong>Now</strong>!</p>
+      </div>
+      <button onclick="toggleSection('about')">About Us</button>
+			<div id="about" style="display: none">
+				<p><strong>About us</strong>: Lorem ipsum dolor sit amet, veri prima appareat per ea, quo repudiare efficiendi signiferumque id, te eum delectus efficiantur. Posse ornatus eu vel, ea solum decore dictas vim. Aliquam feugiat inermis eum no. His id feugiat accommodare. Mea iudico prompta quaeque ne, ne has quas diceret, ne est exerci labitur.</p>
+			</div>
+    </div>
+
+    <div class="container">
+    <h3>Order:</h3>
       <div class="row">
         <div class="col-md-4s well">
           <h2>Size:</h2>
@@ -31,7 +41,9 @@
 
     <div class="thank-you" id="center-position">
 			<blockquote class="bg-info">
-				<p><img src=img/vegetables.png alt="delicious veggies picture" style="height:60px;">We appreciate your business!</p>
+				<img id="right" src=img/portobellaright.png alt="mushroom logo" style="height:60px;">
+				<img id="left" src=img/portobellaleft.png alt="mushroom logo" style="height:60px;">
+        <p>We appreciate your business!</p>
 				<footer><a href='mailto:mellow.mushroom@pizza.com'>Please contact us with any questions or concerns!</a></footer>
 			</blockquote>
 		</div>
