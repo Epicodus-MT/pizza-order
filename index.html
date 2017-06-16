@@ -19,14 +19,21 @@
         </div>
       </div>
       <div class="container">
-        <div class='mushrooms'><img src=img/create-pizza.jpg alt="Create your own pizza!" style="height:148px;"><p></p>
-          <h3>Fast, Easy and Convenient. Order <strong>Now</strong>!</h3>
+        <div class='veggie'><img src=img/create-pizza.jpg alt="Create your own pizza!" style="height:188px;"><p></p>
+          <h3>Fast, Easy and Convenient.</h3>
+          <h3>Sizes:</h3>
+          <h4>* Small $10</h4>
+          <h4>* Medium $12</h4>
+          <h4>* Large $14</h4>
+          <h4>Cheese and veggie <em>toppings</em> only <em>$1/each</em></h4>
+          <img src=img/basil.png alt="Tasty tomato basil pizza!" style="height:108px;">
+          <h3><strong>Order Now!</strong></h3>
         </div>
       </div>
-
       <div class="container">
         <div class='order' id="user-input">
-    			<form id="pizza-form">
+
+    			<form id="new-pizza">
     				<div class="form-group">
     					<label for="name"><h4>Name:</h4></label>
     					<input id="name" class="personal-info" type="text">
@@ -41,19 +48,19 @@
                 <h4><strong>Size:</strong></h4>
                 <label>
       						<input type="radio" name="size" value="small" checked>
-      						Small
+      						Small ($10)
       					</label>
       				</div>
       				<div class="radio">
       					<label>
       						<input type="radio" name="size" value="medium">
-      						Medium
+      						Medium ($12)
       					</label>
       				</div>
               <div class="radio">
                 <label>
                   <input type="radio" name="size" value="large">
-                  Large
+                  Large ($14)
                 </label>
               </div>
             </div>
@@ -85,19 +92,19 @@
                 <h4><strong>Cheese:</strong></h4>
                 <label>
       						<input type="checkbox" name="cheese" value="fresh-mozzarella" checked>
-      						Fresh Mozzarella
+      						Fresh Mozzarella ($1)
       					</label>
       				</div>
       				<div class="checkbox">
       					<label>
       						<input type="checkbox" name="cheese" value="goat-cheese">
-      						Goat Cheese
+      						Goat Cheese ($1)
       					</label>
       				</div>
               <div class="checkbox">
                 <label>
                   <input type="checkbox" name="cheese" value="fontina">
-                  Fontina
+                  Fontina ($1)
                 </label>
               </div>
             </div>
@@ -108,31 +115,31 @@
                 <h4><strong>Toppings:</strong></h4>
                 <label>
                   <input type="checkbox" name="toppings" value="mushrooms">
-                  Mushrooms
+                  Mushrooms ($1)
                 </label>
               </div>
               <div class="checkbox">
                 <label>
                   <input type="checkbox" name="toppings" value="sun-ripened-tomatoes">
-                  Sun Ripened Tomatoes
+                  Sun Ripened Tomatoes ($1)
                 </label>
               </div>
               <div class="checkbox">
                 <label>
                   <input type="checkbox" name="toppings" value="caramelized-onions">
-                  Caramelized Onions
+                  Caramelized Onions ($1)
                 </label>
               </div>
               <div class="checkbox">
                 <label>
                   <input type="checkbox" name="toppings" value="roasted-garlic">
-                  Roasted Garlic
+                  Roasted Garlic ($1)
                 </label>
               </div>
               <div class="checkbox">
                 <label>
                   <input type="checkbox" name="toppings" value="green-olives">
-                  Basil
+                  Basil ($1)
                 </label>
               </div>
             </div>
@@ -142,19 +149,16 @@
         </div>
       </div>
 
-      <div id="output">
+      <div class="output">
         <h3>Order Review:</h3>
-          <ul id="pizza-list">
-          </ul>
-          <div id="order-information"><h4>
-            <p>Size: <span id="size"></span></p>
-            <p>Cheese: <span id="cheese"></span></p>
-            <p>Base Sauce: <span id="base-sauce"></span></p>
-            <p>Toppings: <span id="toppings"></span></p></h4>
-          </div>
-
-
-        </p>
+        <ul id="pizza-order-list">
+        </ul>
+        <div id="pizza-details"><h4>
+          <p>Size: <span id="size"></span></p>
+          <p>Cheese: <span id="cheese"></span></p>
+          <p>Base Sauce: <span id="sauce"></span></p>
+          <p>Toppings: <span id="topping"></span></p></h4>
+        </div>
       </div>
 
       <div class="thank-you" id="center-position">
