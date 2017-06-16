@@ -9,20 +9,28 @@ body {
 .container {
   max-width: 800px;
   margin: auto;
-  background-color: #AED6F1;
-  padding-left: 0px;
-  padding-right: 0px;
+  background-color: #795857;
+  padding-left: 20px;
+  padding-right: 20px;
   text-align: center;
 }
 .thank-you {
+  background-color: #B9A28D;
   text-align: center;
+  max-width: 800px;
+  margin: auto;
+
 }
 
-.thank-you #right {
+#about {
+  max-width: 500px;
+  margin: auto;
+}
+#right {
   float:right;
 }
 
-.thank-you #left {
+#left {
   float:left;
 }
 
@@ -35,6 +43,7 @@ body {
   margin: auto;
   padding: 30px;
   text-align: center;
+  background-color: #B9A28D;
 }
 
 .jumbotron .mushrooms {

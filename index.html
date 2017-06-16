@@ -20,17 +20,116 @@
       </div>
       <button onclick="toggleSection('about')">About Us</button>
 			<div id="about" style="display: none">
-				<p><strong>About us</strong>: Lorem ipsum dolor sit amet, veri prima appareat per ea, quo repudiare efficiendi signiferumque id, te eum delectus efficiantur. Posse ornatus eu vel, ea solum decore dictas vim. Aliquam feugiat inermis eum no. His id feugiat accommodare. Mea iudico prompta quaeque ne, ne has quas diceret, ne est exerci labitur.</p>
+				<p></p><p><strong>About us</strong>: Lorem ipsum dolor sit amet, veri prima appareat per ea, quo repudiare efficiendi signiferumque id, te eum delectus efficiantur. Posse ornatus eu vel, ea solum decore dictas vim. Aliquam feugiat inermis eum no. His id feugiat accommodare. Mea iudico prompta quaeque ne, ne has quas diceret, ne est exerci labitur.</p>
 			</div>
     </div>
 
     <div class="container">
-    <h3>Order:</h3>
-      <div class="row">
-        <div class="col-md-4s well">
-          <h2>Size:</h2>
-          <form id="new-pizza" class="form-horizontal">
-            <div class="form-group">
+      <div class='order' id="user-input">
+  			<form id="pizza-form">
+  				<h3>Place your order here:</h3>
+  				<div class="form-group">
+  					<label for="name"><h4>Name:</h4></label>
+  					<input id="name" class="personal-info" type="text">
+  				</div>
+  				<div class="form-group">
+  					<label for="address"><h4>Address:</h4></label>
+  					<input id="address" class="personal-info" type="text">
+  				</div>
+
+  				<div class="radio">
+            <h4><strong>Size:</strong></h4>  					<label>
+  						<input type="radio" name="size" value="small" checked>
+  						Small
+  					</label>
+  				</div>
+  				<div class="radio">
+  					<label>
+  						<input type="radio" name="size" value="medium">
+  						Medium
+  					</label>
+  				</div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="size" value="large">
+              Large
+            </label>
+          </div>
+
+
+          <div class="radio">
+            <h4><strong>Cheese:</strong></h4>
+            <label>
+  						<input type="radio" name="cheese" value="fresh-mozzarella" checked>
+  						Fresh Mozzarella
+  					</label>
+  				</div>
+  				<div class="radio">
+  					<label>
+  						<input type="radio" name="cheese" value="goat-cheese">
+  						Goat Cheese
+  					</label>
+  				</div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="cheese" value="fontina">
+              Fontina
+            </label>
+          </div>
+
+          <div class="radio">
+            <h4><strong>Base Sauce:</strong></h4>
+            <label>
+              <input type="radio" name="sauce" value="italian-base" checked>
+              Crushed Italian Tomatoes Base
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sauce" value="garlic-olive-oil-base">
+              Garlic Olive Oil Base
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="sauce" value="pesto-base">
+              Pesto Base
+            </label>
+          </div>
+
+          <div class="radio">
+            <h4><strong>Toppings:</strong></h4>
+            <label>
+              <input type="radio" name="toppings" value="mushrooms">
+              Mushrooms
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="toppings" value="sun-ripened-tomatoes">
+              Sun Ripened Tomatoes
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="toppings" value="caramelized-onions">
+              Caramelized Onions
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="toppings" value="roasted-garlic">
+              Roasted Garlic
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="toppings" value="green-olives">
+              Basil
+            </label>
+          </div>
+
+
 
 
             <button type="submit" class="btn btn-default" id="newPizzaSubmit">Submit</button>
@@ -40,7 +139,7 @@
       </div>
 
     <div class="thank-you" id="center-position">
-			<blockquote class="bg-info">
+			<blockquote class="bg-default">
 				<img id="right" src=img/portobellaright.png alt="mushroom logo" style="height:60px;">
 				<img id="left" src=img/portobellaleft.png alt="mushroom logo" style="height:60px;">
         <p>We appreciate your business!</p>
