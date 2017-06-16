@@ -9,14 +9,17 @@ _A web application that where a user can order a pizza by choosing a size and be
 
 |Behavior - Plain English|Input|Output|
 |---|---|---|
-|User selects size and pizza toppings, then submits|Large - mushroom and green peppers|current balance = 12.00|
+|User selects size and pizza toppings, then submits|Large - mushroom and green peppers|current balance = 16.00|
 
 ## Specifications
 
 * _It can take in user input_
 * _Output is total cost depending on size and number of toppings -->_
-_**Example Input: [Small] [onions, tomatoes];**_
-_**Example Output: [current balance = 12.00]**_
+_**Example**:_
+
+|Input|Output|
+|---|---|
+|Small: onions, sun-dried tomatoes|current balance = 12.00|
 
 ## What's included
 Within the repository you'll find the following directories and files:
