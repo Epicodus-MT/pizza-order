@@ -60,28 +60,6 @@
 
             <div class="form-group">
               <div class="radio">
-                <h4><strong>Cheese:</strong></h4>
-                <label>
-      						<input type="radio" name="cheese" value="fresh-mozzarella" checked>
-      						Fresh Mozzarella
-      					</label>
-      				</div>
-      				<div class="radio">
-      					<label>
-      						<input type="radio" name="cheese" value="goat-cheese">
-      						Goat Cheese
-      					</label>
-      				</div>
-              <div class="radio">
-                <label>
-                  <input type="radio" name="cheese" value="fontina">
-                  Fontina
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="radio">
                 <h4><strong>Base Sauce:</strong></h4>
                 <label>
                   <input type="radio" name="sauce" value="italian-base" checked>
@@ -103,34 +81,57 @@
             </div>
 
             <div class="form-group">
-              <div class="radio">
+              <div class="checkbox">
+                <h4><strong>Cheese:</strong></h4>
+                <label>
+      						<input type="checkbox" name="cheese" value="fresh-mozzarella" checked>
+      						Fresh Mozzarella
+      					</label>
+      				</div>
+      				<div class="checkbox">
+      					<label>
+      						<input type="checkbox" name="cheese" value="goat-cheese">
+      						Goat Cheese
+      					</label>
+      				</div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="cheese" value="fontina">
+                  Fontina
+                </label>
+              </div>
+            </div>
+
+
+            <div class="form-group">
+              <div class="checkbox">
                 <h4><strong>Toppings:</strong></h4>
                 <label>
-                  <input type="radio" name="toppings" value="mushrooms">
+                  <input type="checkbox" name="toppings" value="mushrooms">
                   Mushrooms
                 </label>
               </div>
-              <div class="radio">
+              <div class="checkbox">
                 <label>
-                  <input type="radio" name="toppings" value="sun-ripened-tomatoes">
+                  <input type="checkbox" name="toppings" value="sun-ripened-tomatoes">
                   Sun Ripened Tomatoes
                 </label>
               </div>
-              <div class="radio">
+              <div class="checkbox">
                 <label>
-                  <input type="radio" name="toppings" value="caramelized-onions">
+                  <input type="checkbox" name="toppings" value="caramelized-onions">
                   Caramelized Onions
                 </label>
               </div>
-              <div class="radio">
+              <div class="checkbox">
                 <label>
-                  <input type="radio" name="toppings" value="roasted-garlic">
+                  <input type="checkbox" name="toppings" value="roasted-garlic">
                   Roasted Garlic
                 </label>
               </div>
-              <div class="radio">
+              <div class="checkbox">
                 <label>
-                  <input type="radio" name="toppings" value="green-olives">
+                  <input type="checkbox" name="toppings" value="green-olives">
                   Basil
                 </label>
               </div>
@@ -143,7 +144,15 @@
 
       <div id="output">
         <h3>Order Review:</h3>
-        <p>
+          <ul id="pizza-list">
+          </ul>
+          <div id="order-information"><h4>
+            <p>Size: <span id="size"></span></p>
+            <p>Cheese: <span id="cheese"></span></p>
+            <p>Base Sauce: <span id="base-sauce"></span></p>
+            <p>Toppings: <span id="toppings"></span></p></h4>
+          </div>
+
 
         </p>
       </div>
