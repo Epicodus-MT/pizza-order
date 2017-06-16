@@ -1,0 +1,41 @@
+body {
+  background-color: #000000;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #AED6F1;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.thank-you {
+  text-align: center;
+}
+
+.thank-you img {
+  float:right;
+}
+
+.thank-you blockquote {
+  margin: 0;
+}
+
+.jumbotron {
+  margin-top: 20px;
+
+}
+
+.jumbotron .vegetable-pizza img{
+  float: right;
+  position: relative;
+}
+
+.epicodus {
+  padding: 10px;
+  margin: auto;
+  max-width: 200px;
+  text-align: center;
+}

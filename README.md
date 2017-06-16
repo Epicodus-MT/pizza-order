@@ -14,8 +14,8 @@ _A web application that where a user can order a pizza by choosing a size and be
 ## Specifications
 
 * _It can take in user input_
-* _Output is total cost depending on size and number of toppings -->_
-_**Example**:_
+* _Calculate costs depending on and number of toppings, and display results to the user_
+* _Example:_
 
 |Input|Output|
 |---|---|
