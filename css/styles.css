@@ -1,7 +1,7 @@
 
 body {
   background-color: #000000;
-  background-image: url("../img/wallpaper-texture.jpg");
+  background-image: url("../img/bricks.jpg");
   background-repeat:repeat;
   font-family: sans-serif;
 }
@@ -9,7 +9,7 @@ body {
 .container {
   max-width: 800px;
   margin: auto;
-  background-color: #795857;
+  background-color: #ad8585;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
