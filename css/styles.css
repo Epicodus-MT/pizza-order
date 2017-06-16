@@ -10,8 +10,7 @@ body {
   max-width: 800px;
   margin: auto;
   background-color: #ad8585;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding: 30px;
   text-align: center;
 }
 .thank-you {
@@ -19,12 +18,22 @@ body {
   text-align: center;
   max-width: 800px;
   margin: auto;
+}
 
+.blockquote {
+  margin: 200px;
+  border-color: black;
+}
+
+#output {
+  display: none;
+  text-align: center;
 }
 
 #about {
   max-width: 500px;
   margin: auto;
+  font-size: 5px;
 }
 #right {
   float:right;
@@ -34,14 +43,14 @@ body {
   float:left;
 }
 
-.thank-you blockquote {
-  margin: 0;
+.thank-you {
+  padding: 20px;
 }
 
 .jumbotron {
   max-width: 800px;
   margin: auto;
-  padding: 30px;
+  padding: 40px;
   text-align: center;
   background-color: #B9A28D;
 }

@@ -5,146 +5,147 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Home Slice Pizza</title>
+    <title>Mellow Mushroom Pizza</title>
   </head>
   <body>
-    <div class="jumbotron">
-      <div class='mushrooms'><img src=img/mushrooms2.png alt="mushroom image" style="height:108px;"></div>
-      <h1>Mellow Mushroom</h1>
-			<h2>Vegetarian Pizzas</h2>
-    </div>
-    <div class="container">
-      <div class='mushrooms'><img src=img/create-pizza.jpg alt="Create your own pizza!" style="height:108px;"><p>Fast, Easy and Convenient. Order <strong>Now</strong>!</p></div>
-      <!-- <div class="info">
+    <blockquote class="main">
+      <div class="jumbotron">
+        <div class='mushrooms'><img src=img/mushrooms2.png alt="mushroom image" style="height:108px;"></div>
+        <h1>Mellow Mushroom</h1>
+  			<h2>Vegetarian Pizzas</h2>
+        <button onclick="toggleSection('about')">About Us</button>
+        <div id="about" style="display: none">
+          <h5><strong>About us</strong>: Lorem ipsum dolor sit amet, veri prima appareat per ea, quo repudiare efficiendi signiferumque id, te eum delectus efficiantur. Posse ornatus eu vel, ea solum decore dictas vim. Aliquam feugiat inermis eum no. His id feugiat accommodare. Mea iudico prompta quaeque ne, ne has quas diceret, ne est exerci labitur.</h5>
+        </div>
+      </div>
+      <div class="container">
+        <div class='mushrooms'><img src=img/create-pizza.jpg alt="Create your own pizza!" style="height:148px;"><p></p>
+          <h3>Fast, Easy and Convenient. Order <strong>Now</strong>!</h3>
+        </div>
+      </div>
 
-      </div> -->
-      <button onclick="toggleSection('about')">About Us</button>
-			<div id="about" style="display: none">
-				<p></p><p><strong>About us</strong>: Lorem ipsum dolor sit amet, veri prima appareat per ea, quo repudiare efficiendi signiferumque id, te eum delectus efficiantur. Posse ornatus eu vel, ea solum decore dictas vim. Aliquam feugiat inermis eum no. His id feugiat accommodare. Mea iudico prompta quaeque ne, ne has quas diceret, ne est exerci labitur.</p>
-			</div>
-    </div>
+      <div class="container">
+        <div class='order' id="user-input">
+    			<form id="pizza-form">
+    				<div class="form-group">
+    					<label for="name"><h4>Name:</h4></label>
+    					<input id="name" class="personal-info" type="text">
+    				</div>
+    				<div class="form-group">
+    					<label for="address"><h4>Address:</h4></label>
+    					<input id="address" class="personal-info" type="text">
+    				</div>
 
-    <div class="container">
-      <div class='order' id="user-input">
-  			<form id="pizza-form">
-  				<h3>Place your order here:</h3>
-  				<div class="form-group">
-  					<label for="name"><h4>Name:</h4></label>
-  					<input id="name" class="personal-info" type="text">
-  				</div>
-  				<div class="form-group">
-  					<label for="address"><h4>Address:</h4></label>
-  					<input id="address" class="personal-info" type="text">
-  				</div>
+    				<div class="radio">
+              <h4><strong>Size:</strong></h4>
+              <label>
+    						<input type="radio" name="size" value="small" checked>
+    						Small
+    					</label>
+    				</div>
+    				<div class="radio">
+    					<label>
+    						<input type="radio" name="size" value="medium">
+    						Medium
+    					</label>
+    				</div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="size" value="large">
+                Large
+              </label>
+            </div>
 
-  				<div class="radio">
-            <h4><strong>Size:</strong></h4>  					<label>
-  						<input type="radio" name="size" value="small" checked>
-  						Small
-  					</label>
-  				</div>
-  				<div class="radio">
-  					<label>
-  						<input type="radio" name="size" value="medium">
-  						Medium
-  					</label>
-  				</div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="size" value="large">
-              Large
-            </label>
-          </div>
+            <div class="radio">
+              <h4><strong>Cheese:</strong></h4>
+              <label>
+    						<input type="radio" name="cheese" value="fresh-mozzarella" checked>
+    						Fresh Mozzarella
+    					</label>
+    				</div>
+    				<div class="radio">
+    					<label>
+    						<input type="radio" name="cheese" value="goat-cheese">
+    						Goat Cheese
+    					</label>
+    				</div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="cheese" value="fontina">
+                Fontina
+              </label>
+            </div>
 
+            <div class="radio">
+              <h4><strong>Base Sauce:</strong></h4>
+              <label>
+                <input type="radio" name="sauce" value="italian-base" checked>
+                Crushed Italian Tomatoes Base
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="sauce" value="garlic-olive-oil-base">
+                Garlic Olive Oil Base
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="sauce" value="pesto-base">
+                Pesto Base
+              </label>
+            </div>
 
-          <div class="radio">
-            <h4><strong>Cheese:</strong></h4>
-            <label>
-  						<input type="radio" name="cheese" value="fresh-mozzarella" checked>
-  						Fresh Mozzarella
-  					</label>
-  				</div>
-  				<div class="radio">
-  					<label>
-  						<input type="radio" name="cheese" value="goat-cheese">
-  						Goat Cheese
-  					</label>
-  				</div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="cheese" value="fontina">
-              Fontina
-            </label>
-          </div>
+            <div class="radio">
+              <h4><strong>Toppings:</strong></h4>
+              <label>
+                <input type="radio" name="toppings" value="mushrooms">
+                Mushrooms
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toppings" value="sun-ripened-tomatoes">
+                Sun Ripened Tomatoes
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toppings" value="caramelized-onions">
+                Caramelized Onions
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toppings" value="roasted-garlic">
+                Roasted Garlic
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="toppings" value="green-olives">
+                Basil
+              </label>
+            </div>
 
-          <div class="radio">
-            <h4><strong>Base Sauce:</strong></h4>
-            <label>
-              <input type="radio" name="sauce" value="italian-base" checked>
-              Crushed Italian Tomatoes Base
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="sauce" value="garlic-olive-oil-base">
-              Garlic Olive Oil Base
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="sauce" value="pesto-base">
-              Pesto Base
-            </label>
-          </div>
-
-          <div class="radio">
-            <h4><strong>Toppings:</strong></h4>
-            <label>
-              <input type="radio" name="toppings" value="mushrooms">
-              Mushrooms
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="toppings" value="sun-ripened-tomatoes">
-              Sun Ripened Tomatoes
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="toppings" value="caramelized-onions">
-              Caramelized Onions
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="toppings" value="roasted-garlic">
-              Roasted Garlic
-            </label>
-          </div>
-          <div class="radio">
-            <label>
-              <input type="radio" name="toppings" value="green-olives">
-              Basil
-            </label>
-          </div>
-
-
-
-
-            <button type="submit" class="btn btn-default" id="newPizzaSubmit">Submit</button>
-          </div>
+            <button type="submit" class="btn btn-default" id="newPizzaSubmit">Review My Order</button>
           </form>
         </div>
       </div>
 
-    <div class="thank-you" id="center-position">
-			<blockquote class="bg-default">
-				<img id="right" src=img/portobellaright.png alt="mushroom logo" style="height:60px;">
-				<img id="left" src=img/portobellaleft.png alt="mushroom logo" style="height:60px;">
-        <p>We appreciate your business!</p>
-				<footer><a href='mailto:mellow.mushroom@pizza.com'>Please contact us with any questions or concerns!</a></footer>
-			</blockquote>
-		</div>
+      <div id="output">
+        <h3>Order Review:</h3>
+        <p>
+
+        </p>
+      </div>
+
+      <div class="thank-you" id="center-position">
+  				<img id="right" src=img/right.png alt="mushroom logo" style="height:60px;">
+  				<img id="left" src=img/left.png alt="mushroom logo" style="height:60px;">
+          <p>We appreciate your business!</p>
+  				<footer><a href='mailto:mellow.mushroom@pizza.com'>Please contact us with any questions or concerns!</a></footer>
+  		</div>
+    </blockquote>
   </body>
 </html>
