@@ -15,37 +15,51 @@ function Pizza (size, sauce, cheese, topping){
   this.sauce = sauce;
   this.cheese = cheese;
   this.topping = topping;
-  this.price = 10;
 }
 
 Pizza.prototype.isPizzaTotal = function() {
+  this.price = 10;
   if (this.size === "medium") {
     this.price += 2;
   }else if (this.size === "large") {
     this.price += 4;
   }
-
-  // for ...
-
+  for (var i = 0; i < this.cheese.length; i++) {
+    this.price += 1;
+  }
+  for (var i = 0; i < this.topping.length; i++) {
+    this.price += 1;
+  }
   return this.price;
 }
 
+Pizza.prototype.result = function() {
+  return "Size" + this.size + ", Sauce" + this.sauce + ", Cheese(s)" + this.cheese + ", Topping(s)" + this.topping + "=  Price: $" + this.price;
+}
+
+
 //user interface logic
 $(document).ready (function () {
-  debugger;
+  var resultOrder = $('#output');
+
   $("form#new-pizza").submit(function (event) {
     event.preventDefault();
 
-    // $("#purchase span").each(function() {
-    //   $(this).empty();
-    // });
-
-    // var inputtedname = $("input#name").val();
+    // var inputtedname = $("#name").val();
     var checkedSize = $("input[name='size']:checked").val();
     var checkedSauce = $("input[name='sauce']:checked").val();
     var checkedCheese = $("input[name='cheese']:checked").val();
     var checkedTopping = $("input[name='topping']:checked").val();
 
+    console.log ({
+      'name': name,
+      'size': size,
+      'sauce': sauce,
+      'cheese': cheese,
+      'topping': topping,
+    });
+
+    var resultText = '';
 
 
     var myPizza = new Pizza(checkedSize, checkedSauce, checkedCheese, checkedTopping);
@@ -55,6 +69,9 @@ $(document).ready (function () {
     $(".topping").append(myPizza.topping);
     $(".price").append(myPizza.isPizzaTotal());
 
+
+    $('#new-pizza').css('display', 'none');
+    $('.output').css('display', 'block');
 
   })
 });

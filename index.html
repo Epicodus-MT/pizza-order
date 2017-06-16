@@ -29,12 +29,12 @@
           <h4>* Large $14</h4>
           <h4>Cheese and veggie <em>toppings</em> only <em>$1/each</em></h4>
           <img src=img/basil.png alt="Tasty tomato basil pizza!" style="height:108px;">
-          <h3><strong>Order Now!</strong></h3>
         </div>
 
         <!-- form -->
   			<form id="new-pizza">
   				<div class="form-group">
+            <h3><strong>Order Now!</strong></h3>
   					<label for="name"><h4>Name:</h4></label>
   					<input id="name" class="personal-info" type="text">
   				</div>
@@ -43,14 +43,11 @@
   					<input id="address" class="personal-info" type="text">
   				</div>
 
-
-
-
-        <!-- <div class="form-group"> -->
+          <!-- <div class="form-group"> -->
           <div id="size">
             <label for="size">Size:</label>
             <div class="radio">
-              <label class="radio-inline"><input type="radio" name="size" value="small">Small ($10)</label>
+              <label class="radio-inline"><input type="radio" name="size" value="small" checked>Small ($10)</label>
               <label class="radio-inline"><input type="radio" name="size" value="medium">Medium ($12)</label>
               <label class="radio-inline"><input type="radio" name="size" value="large">Large ($14)</label>
             </div>
@@ -61,7 +58,7 @@
           <div id="sauce">
             <label for="sauce">Base Sauce:</label>
             <div class="radio">
-              <label class="radio"><input type="radio" name="sauce" value="italian">Crushed Italian Tomatoes Base</label>
+              <label class="radio"><input type="radio" name="sauce" value="italian" checked>Crushed Italian Tomatoes Base</label>
               <label class="radio"><input type="radio" name="sauce" value="garlic">Garlic Olive Oil Base</label>
               <label class="radio"><input type="radio" name="sauce" value="pesto">Pesto Base</label>
             </div>
@@ -79,8 +76,6 @@
           </div>
           <!-- </div> -->
 
-
-
           <!-- <div class="form-group"> -->
           <div id="topping">
             <label for="topping">Toppings:</label>
@@ -94,14 +89,15 @@
           </div>
           <!-- </div> -->
 
-          <button type="submit" class="btn btn-default" id="newPizzaSubmit">Review My Order</button>         
+          <button type="submit" class="btn btn-default" id="newPizzaSubmit">Review My Order</button>
         </form>
-      </div>
+      <!-- </div> -->
 
-      <div class="output">
-        <h3>Order Review:</h3>
-        <div id="purchase">
-          <p class="lead">Size: <span class="size"></span>. Sauce: <span class="sauce"></span>. Cheese(s): <span class="cheese"></span>. Topping(s): <span class="topping"></span>. Your price for this pizza is: <span class="purchase-price"></span></p>
+        <div class="output">
+          <h3><strong>Order Review:</strong></h3>
+          <div id="purchase">
+            <p class="lead">Size: <span class="size"></span>. Sauce: <span class="sauce"></span>. Cheese(s): <span class="cheese"></span>. Topping(s): <span class="topping"></span>. Your price for this pizza is: <span class="purchase-price"></span></p>
+          </div>
         </div>
       </div>
 
