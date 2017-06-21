@@ -8,7 +8,6 @@ function toggleSection(sectionName) {
   }
 }
 
-
 //business logic
 function Pizza (size, sauce, cheese, topping){
   this.size = size;
@@ -32,11 +31,6 @@ Pizza.prototype.pizzaTotal = function() {
   }
   return this.price;
 }
-//
-// Pizza.prototype.result = function() {
-//   return "Size" + this.size + ", Sauce" + this.sauce + ", Cheese(s)" + this.cheese + ", Topping(s)" + this.topping + "=  Price: $" + this.price;
-// }
-
 
 //user interface logic
 $(document).ready (function () {
@@ -65,7 +59,6 @@ $(document).ready (function () {
     });
 
     var resultText = '';
-
 
     var myPizza = new Pizza(checkedSize, checkedSauce, checkedCheeses, checkedToppings);
     $(".size").append(myPizza.size);
