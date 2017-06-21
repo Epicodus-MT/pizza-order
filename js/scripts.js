@@ -8,7 +8,6 @@ function toggleSection(sectionName) {
   }
 }
 
-//business logic
 function Pizza (size, sauce, cheese, topping){
   this.size = size;
   this.sauce = sauce;
